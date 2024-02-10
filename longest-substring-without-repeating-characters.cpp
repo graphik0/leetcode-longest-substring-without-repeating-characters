@@ -1,3 +1,10 @@
+#include <iostream>
+#include <string>
+#include <unordered_set>
+#include <algorithm>
+
+using namespace std;
+
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -17,3 +24,12 @@ public:
         return longestLength;
     }
 };
+
+int main() {
+    Solution solution;
+    string input = "abcabcbb"; // Example input string
+    int result = solution.lengthOfLongestSubstring(input);
+    cout << "Length of the longest substring without repeating characters: " << result << endl;
+    return 0;
+}
+
